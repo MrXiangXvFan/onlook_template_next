@@ -1,70 +1,7 @@
 import React, { Fragment } from "react"
 import Link from "next/link"
-import { Badge } from "@/components/ui/badge"
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb"
-import { Button } from "@/components/ui/button"
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card"
-import {
-  DropdownMenu,
-  DropdownMenuCheckboxItem,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
-import { Input } from "@/components/ui/input"
-import {
-  Pagination,
-  PaginationContent,
-  PaginationItem,
-} from "@/components/ui/pagination"
-import { Progress } from "@/components/ui/progress"
-import { Separator } from "@/components/ui/separator"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import {
-  ChevronLeftIcon,
-  ChevronRightIcon,
-  CopyIcon,
-  CreditCardIcon,
-  FileIcon,
-  HomeIcon,
-  LineChartIcon,
-  ListFilterIcon,
-  MoveVerticalIcon,
-  Package2Icon,
-  PackageIcon,
-  PanelLeftIcon,
-  SearchIcon,
-  ShoppingCartIcon,
-  TruckIcon,
-  UsersIcon,
-} from "./shared"
-import { Sidebar } from "./sidebar"
 import Test from "./text"
+
 const innerCom = () => {
   return <div className="text-[#d01212]">文件内的组件</div>
 }
@@ -80,6 +17,12 @@ export function Dashboard() {
       <h1 className="text-[#2c63e2]">222</h1>
       <Test></Test>
       {innerCom()};
+      <Link
+        className=""
+        href="/test1"
+      >
+        点击进入AI生成的页面
+      </Link>
     </div>
   )
 }
